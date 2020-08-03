@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{block.super}}
+
+    <div class="container">
+        <br>
+        <center><h1>Enter Youtube Link here</h1></center>
+        <form action="download/" method="GET">
+            <div class="form-group">
+              <input name="url" type="text" class="form-control" id="link" aria-describedby="emailHelp" placeholder="Enter Youtube video link here">
+              
+            </div>
+            <center>
+                <button type="submit" class="btn btn-outline-success">Submit</button>
+            </center>
+        </form>
+    </div>
+
+
+{% endblock %}
